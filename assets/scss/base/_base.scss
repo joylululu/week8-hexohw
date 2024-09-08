@@ -1,0 +1,54 @@
+body {
+  font-family: "Poppins", "system-ui", serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.1em;
+  margin-bottom: 0px;
+}
+
+p {
+  letter-spacing: 0.05em;
+  margin-bottom: 0px;
+}
+/*matertial deisgn icons*/
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.bg-tint {
+  background: #e5f4ff;
+}
+
+.bg-neutral-40 {
+  background: $neutral-100;
+}
+
+.mb {
+  border-bottom: solid 2px $neutral-100;
+}
+
+.text-neutral-300 {
+  color: $neutral-300;
+}

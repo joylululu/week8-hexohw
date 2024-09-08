@@ -5,10 +5,367 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
+    <link rel="stylesheet" href="/assets/scss/all.scss" />
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <h1>我是about</h1>
+
+    <!-- banner -->
+
+    <div class="about-background"></div>
+
+    <!-- intro -->
+    <div class="container">
+      <div class="py-10 py-lg-11">
+        <div class="row">
+          <!-- intro left -->
+
+          <div class="col-md-3 position-relative">
+            <img
+              src="/assets/images/logo-hexo.png"
+              alt="Hexo school logo"
+              class="shadow-sm rounded-circle position-absolute start-50 translate-middle hexo-logo"
+            />
+          </div>
+
+          <!-- intro right -->
+
+          <div class="col-md-9 col-12">
+            <h2
+              class="fs-1 fw-bolder mb-2 text-center text-lg-start mb-4 mb-lg-6"
+            >
+              六角學院
+            </h2>
+
+            <ul
+              class="d-flex justify-content-center justify-content-lg-start list-unstyled mb-4 mb-lg-6"
+            >
+              <li class="border-end pe-3">
+                <p><strong class="text-primary fs-6">4</strong>堂課</p>
+              </li>
+              <li class="border-end px-3">
+                <p><strong class="text-primary fs-6">8463</strong>收藏數</p>
+              </li>
+              <li class="ps-3">
+                <p>
+                  <strong class="text-primary fs-6">20,218</strong>
+                  個學生
+                </p>
+              </li>
+            </ul>
+
+            <p class="mb-4 mb-lg-6">
+              六角學院 是一所線上程式開發學習單位，目前已累積 20,000
+              名學員，讓更多人藉由線上學習在職涯規劃上有更多的選擇是我們的使命是，如果您贊同我們的理念，歡迎加入六角。
+              我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運
+              Know how。
+            </p>
+
+            <div
+              class="d-flex list-unstyled flex-lg-row flex-column justify-content-lg-between align-items-lg-start align-items-center"
+            >
+              <ul class="list-unstyled d-flex flex-lg-row mt-4 mt-lg-6">
+                <li>
+                  <a href="#"
+                    ><span class="py-3 px-4 border border-1 rounded-circle me-4"
+                      ><i class="bi bi-line"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="py-3 px-4 border border-1 rounded-circle me-4"
+                      ><i class="bi bi-youtube"></i></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><span class="py-3 px-4 border border-1 rounded-circle"
+                      ><i class="bi bi-facebook"></i></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- intro course -->
+
+    <div class="container">
+      <div class="pb-10 pb-lg-13">
+        <div class="row">
+          <!-- popular Course lists-->
+
+          <div class="col">
+            <h2 class="fs-5 fw-bold mb-2 text-lg-start text-center mb-6">
+              <span
+                ><img src="/assets/images/icons/ic_asterisk.png" alt=""
+              /></span>
+              六角學院開的課
+            </h2>
+
+            <div class="swiper course-container-intro h-auto">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="/assets/images/course-5.png"
+                      class="card-img-top"
+                      alt="創意寫作工坊"
+                    />
+                    <div
+                      class="text-overlay-popular position-absolute fs-8 fw-bold text-danger bg-danger-100"
+                      style="top: 1rem; left: 1rem"
+                    >
+                      限時 8 折 🔥
+                    </div>
+                    <div class="card-body py-4 px-3">
+                      <h2 class="fs-5 fw-bold mb-4">
+                        小白也會！從零開始學習 Python 程式設計
+                      </h2>
+
+                      <div class="d-flex justify-content-between mb">
+                        <div
+                          class="author-popular d-flex align-items-center mb-4"
+                        >
+                          <img
+                            src="/assets/images/avatar-2.png"
+                            class="me-2"
+                            alt="Kelly Hsu"
+                          />
+                          <p class="text-neutral-400">Kelly Hsu</p>
+                        </div>
+                        <div class="student d-flex flex-column mb-4">
+                          <p class="me-2 fs-6 fw-bold text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p
+                            class="me-2 fs-8 line-through text-end text-neutral-300"
+                          >
+                            NT$3,280
+                          </p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-between align-items-center mt-4"
+                      >
+                        <div class="student d-flex flex-column mb-2">
+                          <p
+                            class="me-2 py-1 px-3 fs-8 text-neutral-400 bg-neutral-40 text-center rounded-pill"
+                          >
+                            程式開發
+                          </p>
+                          <p class="fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                          <p class="review-star">
+                            <strong>4.0</strong>
+                            <span class="text-neutral-300">(333)</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="/assets/images/course-6.png"
+                      class="card-img-top"
+                      alt="創意寫作工坊"
+                    />
+                    <div
+                      class="text-overlay-popular position-absolute fs-8 fw-bold text-danger bg-danger-100"
+                      style="top: 1rem; left: 1rem"
+                    >
+                      限時 8 折 🔥
+                    </div>
+                    <div class="card-body py-4 px-3">
+                      <h2 class="fs-5 fw-bold mb-4">
+                        全面掌握 JavaScript 開發技術
+                      </h2>
+
+                      <div class="d-flex justify-content-between mb">
+                        <div
+                          class="author-popular d-flex align-items-center mb-4"
+                        >
+                          <img
+                            src="/assets/images/avatar-2.png"
+                            class="me-2"
+                            alt="Kelly Hsu"
+                          />
+                          <p class="text-neutral-400">Kelly Hsu</p>
+                        </div>
+                        <div class="student d-flex flex-column mb-4">
+                          <p class="me-2 fs-6 fw-bold text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p
+                            class="me-2 fs-8 line-through text-end text-neutral-300"
+                          >
+                            NT$3,280
+                          </p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-between align-items-center mt-4"
+                      >
+                        <div class="student d-flex flex-column mb-2">
+                          <p
+                            class="me-2 py-1 px-3 fs-8 text-neutral-400 bg-neutral-40 text-center rounded-pill"
+                          >
+                            程式開發
+                          </p>
+                          <p class="fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                          <p class="review-star">
+                            <strong>4.0</strong>
+                            <span class="text-neutral-300">(333)</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="/assets/images/course-7.png"
+                      class="card-img-top"
+                      alt="創意寫作工坊"
+                    />
+                    <div
+                      class="text-overlay-popular position-absolute fs-8 fw-bold text-danger bg-danger-100"
+                      style="top: 1rem; left: 1rem"
+                    >
+                      限時 8 折 🔥
+                    </div>
+                    <div class="card-body py-4 px-3">
+                      <h2 class="fs-5 fw-bold mb-4">
+                        HTML & CSS 網頁設計基礎教程
+                      </h2>
+
+                      <div class="d-flex justify-content-between mb">
+                        <div
+                          class="author-popular d-flex align-items-center mb-4"
+                        >
+                          <img
+                            src="/assets/images/avatar-2.png
+                                "
+                            class="me-2"
+                            alt="Kelly Hsu"
+                          />
+                          <p class="text-neutral-400">Kelly Hsu</p>
+                        </div>
+                        <div class="student d-flex flex-column mb-4">
+                          <p class="me-2 fs-6 fw-bold text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p
+                            class="me-2 fs-8 line-through text-end text-neutral-300"
+                          >
+                            NT$3,280
+                          </p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-between align-items-center mt-4"
+                      >
+                        <div class="student d-flex flex-column mb-2">
+                          <p
+                            class="me-2 py-1 px-3 fs-8 text-neutral-400 bg-neutral-40 text-center rounded-pill"
+                          >
+                            程式開發
+                          </p>
+                          <p class="fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                          <p class="review-star">
+                            <strong>4.0</strong>
+                            <span class="text-neutral-300">(333)</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img
+                      src="/assets/images/course-8.png"
+                      class="card-img-top"
+                      alt="創意寫作工坊"
+                    />
+                    <div
+                      class="text-overlay-popular position-absolute fs-8 fw-bold text-danger bg-danger-100"
+                      style="top: 1rem; left: 1rem"
+                    >
+                      限時 8 折 🔥
+                    </div>
+                    <div class="card-body py-4 px-3">
+                      <h2 class="fs-5 fw-bold mb-4">
+                        更進一步！深入學習 Node.js 與後端開發
+                      </h2>
+
+                      <div class="d-flex justify-content-between mb">
+                        <div
+                          class="author-popular d-flex align-items-center mb-4"
+                        >
+                          <img
+                            src="/assets/images/avatar-2.png"
+                            class="me-2"
+                            alt="Kelly Hsu"
+                          />
+                          <p class="text-neutral-400">Kelly Hsu</p>
+                        </div>
+                        <div class="student d-flex flex-column mb-4">
+                          <p class="me-2 fs-6 fw-bold text-primary text-end">
+                            NT$ 2,480
+                          </p>
+                          <p
+                            class="me-2 fs-8 line-through text-end text-neutral-300"
+                          >
+                            NT$3,280
+                          </p>
+                        </div>
+                      </div>
+
+                      <div
+                        class="d-flex justify-content-between align-items-center mt-4"
+                      >
+                        <div class="student d-flex flex-column mb-2">
+                          <p
+                            class="me-2 py-1 px-3 fs-8 text-neutral-400 bg-neutral-40 text-center rounded-pill"
+                          >
+                            程式開發
+                          </p>
+                          <p class="fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                          <p class="review-star">
+                            <strong>4.0</strong>
+                            <span class="text-neutral-300">(333)</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>

@@ -1,3 +1,373 @@
-.index-title {
-  font-size: 100px;
+//swiper header
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.header-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-slide-sm {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5rem;
+}
+
+.header-slide-sm img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-container {
+  max-width: 1656px;
+  margin: 0 auto;
+  padding-bottom: 72px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.header-container-sm {
+  padding-bottom: 0px;
+}
+
+.header-slogan {
+  z-index: 1000;
+  bottom: 165px;
+  padding: 1rem;
+  background: $white;
+  border-radius: 3rem;
+}
+
+.header-label {
+  background-color: #e5f4ff;
+}
+
+.header-link {
+  z-index: 1000;
+  bottom: 0px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+  border-top-right-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+}
+
+.header-slogan-sm {
+  z-index: 1000;
+  bottom: 90px;
+  padding: 1rem;
+  background: $white;
+  border-radius: 3rem;
+}
+
+.header-link-sm {
+  z-index: 1000;
+  bottom: 0px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  border-radius: 0;
+  justify-content: center;
+}
+
+//reference from https://blog.csdn.net/qq_41083105/article/details/121563169
+.wrapper {
+  --swiper-navigation-size: 0;
+  //overflow: hidden;
+}
+
+//menu dropdown
+.arrow-forward {
+  display: flex;
+  justify-content: space-between;
+}
+.arrow-forward::after {
+  content: "\e5c8";
+  font-family: "material symbols outlined";
+  border: none;
+  //padding-left: 100px;
+}
+
+.arrow-forward-sm {
+  display: flex;
+}
+.arrow-forward-sm::after {
+  content: "\e5c8";
+  font-family: "material symbols outlined";
+  border: none;
+  //padding-left: 100px;
+}
+
+//banner
+.bg-flower {
+  background-image: url(/assets/images/deco/flower_6.png);
+  background-repeat: no-repeat;
+  background-position: top left -21%;
+  z-index: -1000;
+
+  @include media-breakpoint-up(md) {
+    background-image: url(/assets/images/deco/flower-2.png);
+    background-repeat: no-repeat;
+    background-position: top left -21%;
+  }
+}
+
+//Course
+
+.py-120 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.line-through {
+  text-decoration: line-through;
+}
+.f-blue {
+  color: #0068ff;
+}
+.author img {
+  width: 44px;
+  height: 44px;
+}
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.text-overlay {
+  padding: 8px 12px;
+  background-color: #e5f4ff;
+  letter-spacing: 0.28px;
+  border-radius: 100px;
+}
+
+.course-container {
+  width: 100%;
+  overflow: hidden;
+}
+.swiper-pagination {
+  position: static;
+  margin-top: 24px;
+}
+.swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 20px;
+}
+
+.text-neutral-400 {
+  color: $neutral-400;
+}
+//Course -nav
+
+.course-nav-container {
+  width: 100%;
+  overflow: hidden;
+}
+.course-slide {
+  width: 100%;
+  max-width: 125px;
+}
+
+//popular course
+.bg-flower-popular {
+  position: absolute;
+  background-image: url(/assets/images/deco/flower-1.png);
+  background-repeat: no-repeat;
+
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+  @include media-breakpoint-up(md) {
+    left: 0px;
+  }
+  @include media-breakpoint-up(lg) {
+    left: 400px;
+  }
+}
+
+.course-container-popular {
+  width: 100%;
+  overflow: hidden;
+}
+
+.author-popular img {
+  width: 2rem;
+  height: 2rem;
+}
+.review-star {
+  display: flex;
+  align-items: center;
+}
+
+.review-star::before {
+  content: "\e838";
+  font-family: "material symbols outlined";
+  border: none;
+  color: #f6bd2b;
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.text-overlay-popular {
+  padding: 8px 12px;
+  background-color: $danger-100;
+  letter-spacing: 0.28px;
+  border-radius: 100px;
+}
+
+//recommended-course
+.bg-polygon-white {
+  position: absolute;
+  top: 90px;
+  left: 0px;
+  @include media-breakpoint-up(md) {
+    top: 0px;
+    left: 0px;
+  }
+  @include media-breakpoint-up(lg) {
+    top: 100px;
+    left: 74px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    top: 175px;
+    left: 46px;
+  }
+  @include media-breakpoint-up(xxl) {
+    top: 175px;
+    left: 74px;
+  }
+}
+
+.bg-line-cross {
+  position: absolute;
+  top: 276px;
+  left: 13px;
+  @include media-breakpoint-up(md) {
+    top: 160px;
+    left: 0px;
+  }
+  @include media-breakpoint-up(lg) {
+    top: 281px;
+    left: 95px;
+  }
+  @include media-breakpoint-up(xl) {
+    top: 326px;
+    left: 124px;
+  }
+  @include media-breakpoint-up(xxl) {
+    top: 326px;
+    left: 172px;
+  }
+}
+
+.recommended-container {
+  max-width: 1656px;
+  margin: 0 auto;
+  background-color: $primary;
+  border-radius: 2.5rem;
+  margin-right: 14px;
+  margin-left: 14px;
+
+  @include media-breakpoint-up(lg) {
+    border-radius: 5rem;
+    margin: 0 auto;
+  }
+}
+
+.course-container-recommended {
+  width: 100%;
+  overflow: hidden;
+}
+
+.bg-orange {
+  background: #ff994f;
+}
+.bg-darkgray {
+  background: #5e5e5e;
+}
+.bg-pink {
+  background: #ff9bad;
+}
+.bg-purpleblue {
+  background: #564ffd;
+}
+.bg-teal {
+  background: #54dff2;
+}
+.bg-lightgreen {
+  background: #52e9bc;
+}
+.bg-lightpurple {
+  background: #cf93ff;
+}
+
+//recommended-teacher
+.bg-flower-teacher {
+  position: absolute;
+  background-image: url(/assets/images/deco/flower-1.png);
+  background-repeat: no-repeat;
+
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+  @include media-breakpoint-up(md) {
+    left: 0px;
+  }
+  @include media-breakpoint-up(lg) {
+    left: 290px;
+  }
+  @include media-breakpoint-up(xl) {
+    left: 365px;
+  }
+  @include media-breakpoint-up(xxl) {
+    left: 450px;
+  }
+}
+
+.recommended-teacher-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.teacher {
+  height: 356px;
+  width: 291px;
+  object-fit: cover;
+  @include media-breakpoint-up(md) {
+    height: auto;
+    width: auto;
+    padding-left: 80px;
+  }
+}
+
+.line-background {
+  @include media-breakpoint-up(lg) {
+    background-image: url(/assets/images/deco/line-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }

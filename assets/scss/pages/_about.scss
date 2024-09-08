@@ -1,0 +1,25 @@
+.about-background {
+  width: 100%;
+  height: 200px;
+  background-image: url(/assets/images/about_us_hero_sm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-up(lg) {
+    background-image: url(/assets/images/about_us_hero.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.hexo-logo {
+  top: -50px;
+  width: 60px;
+  height: 60px;
+  background: $white;
+  @include media-breakpoint-up(lg) {
+    width: 240px;
+    height: 240px;
+  }
+}
